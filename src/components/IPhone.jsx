@@ -6,11 +6,11 @@ Source: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841
 Title: Apple iPhone 15 Pro Max Black
 */
 
-import React, { useRef } from 'react';
-import { useGLTF } from '@react-three/drei';
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/models/scene.glb');
+  const { nodes, materials } = useGLTF("/models/scene.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -235,4 +235,4 @@ export function Model(props) {
 }
 
 export default Model;
-useGLTF.preload('/models/scene.glb');
+useGLTF.preload("/models/scene.glb");

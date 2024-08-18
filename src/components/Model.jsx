@@ -1,18 +1,18 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import ModelView from './ModelView';
-import { useRef, useState } from 'react';
-import { yellowImg } from '../utils';
-import * as THREE from 'three';
-import { Canvas } from '@react-three/fiber';
-import { View } from '@react-three/drei';
-import { models, sizes } from '../constants';
+import * as THREE from "three";
+import gsap from "gsap";
+import ModelView from "./ModelView";
+import { useGSAP } from "@gsap/react";
+import { useRef, useState } from "react";
+import { yellowImg } from "../utils";
+import { Canvas } from "@react-three/fiber";
+import { View } from "@react-three/drei";
+import { models, sizes } from "../constants";
 
 const Model = () => {
-  const [size, setSize] = useState('small');
+  const [size, setSize] = useState("small");
   const [model, setModel] = useState({
-    title: 'iPhone 15 Pro in Natural Titanium',
-    colors: ['#8F8A81', '#FFE7B9', '#6F6C64'],
+    title: "iPhone 15 Pro in Natural Titanium",
+    colors: ["#8F8A81", "#FFE7B9", "#6F6C64"],
     img: yellowImg,
   });
 
@@ -29,7 +29,7 @@ const Model = () => {
   const [largeRotation, setLargeRotation] = useState(0);
 
   useGSAP(() => {
-    gsap.to('#heading', {
+    gsap.to("#heading", {
       y: 0,
       opacity: 1,
     });
@@ -65,14 +65,14 @@ const Model = () => {
             <Canvas
               className="h-full w-fulll"
               style={{
-                position: 'fixed',
+                position: "fixed",
                 top: 0,
                 bottom: 0,
                 right: 0,
                 left: 0,
-                overflow: 'hidden',
+                overflow: "hidden",
               }}
-              eventSource={document.getElementById('root')}>
+              eventSource={document.getElementById("root")}>
               <View.Port />
             </Canvas>
           </div>
@@ -97,8 +97,8 @@ const Model = () => {
                     key={label}
                     className="size-btn"
                     style={{
-                      backgroundColor: size === value ? 'white' : 'transparent',
-                      color: size === value ? 'black' : 'white',
+                      backgroundColor: size === value ? "white" : "transparent",
+                      color: size === value ? "black" : "white",
                     }}
                     onClick={() => setSize(value)}>
                     {label}

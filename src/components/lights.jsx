@@ -1,5 +1,4 @@
-import { Environment, Lightformer } from '@react-three/drei';
-
+import { Environment, Lightformer } from "@react-three/drei";
 
 const Lights = () => {
   return (
@@ -20,7 +19,7 @@ const Lights = () => {
             intensity={10}
             position={[-1, 0, -10]}
             scale={10}
-            color={'#495057'}
+            color={"#495057"}
           />
           <Lightformer
             form="rect"
@@ -50,7 +49,7 @@ const Lights = () => {
         penumbra={1} // the penumbra is the soft edge of a shadow cast by a point light
         decay={0} // the amount the light dims as it moves away from the source
         intensity={Math.PI * 0.2} // the light intensity
-        color={'#f8f9fa'}
+        color={"#f8f9fa"}
       />
       <spotLight
         position={[0, -25, 10]}
@@ -58,7 +57,7 @@ const Lights = () => {
         penumbra={1}
         decay={0}
         intensity={Math.PI * 0.2}
-        color={'#f8f9fa'}
+        color={"#f8f9fa"}
       />
       <spotLight
         position={[0, 15, 5]}

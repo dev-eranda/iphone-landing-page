@@ -1,16 +1,16 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { rightImg, watchImg } from '../utils';
-import VideoCarousel from './VideoCarousel';
+import gsap from "gsap";
+import VideoCarousel from "./VideoCarousel";
+import { useGSAP } from "@gsap/react";
+import { rightImg, watchImg } from "../utils";
 
 const Highlights = () => {
   useGSAP(() => {
-    gsap.to('#title', {
+    gsap.to("#title", {
       opacity: 1,
       y: 0,
     });
 
-    gsap.to('.link', {
+    gsap.to(".link", {
       opacity: 1,
       y: 0,
       duration: 1,
@@ -19,7 +19,9 @@ const Highlights = () => {
   }, []);
 
   return (
-    <section id="highlights" className="w-screen h-full overflow-hidden common-padding bg-zinc">
+    <section
+      id="highlights"
+      className="w-screen h-full overflow-hidden common-padding bg-zinc">
       <div className="screen-max-width">
         <div className="items-end justify-between w-full mb-12 md:flex">
           <h1 id="title" className="section-heading">

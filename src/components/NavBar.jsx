@@ -1,5 +1,5 @@
-import { appleImg, bagImg, searchImg } from '../utils';
-import { navLists } from '../constants';
+import { appleImg, bagImg, searchImg } from "../utils";
+import { navLists } from "../constants";
 
 const NavBar = () => {
   return (
@@ -11,8 +11,7 @@ const NavBar = () => {
           {navLists.map((nav) => (
             <div
               key={nav}
-              className="px-5 text-sm transition-all cursor-pointer text-gray hover:text-white"
-            >
+              className="px-5 text-sm transition-all cursor-pointer text-gray hover:text-white">
               {nav}
             </div>
           ))}
