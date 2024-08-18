@@ -76,7 +76,7 @@ const Model = () => {
               <View.Port />
             </Canvas>
           </div>
-          <div className="mx-auto" w-full>
+          <div className="w-full mx-auto">
             <p className="mb-5 text-sm font-light text-center">{model.title}</p>
 
             <div className="flex-center">
