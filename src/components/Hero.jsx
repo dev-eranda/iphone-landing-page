@@ -32,23 +32,23 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full nav-height bg-black relative">
-      <div className="h-5/6 w-ful flex-center flex-col">
+    <section className="relative w-full bg-black nav-height">
+      <div className="flex-col h-5/6 w-ful flex-center">
         <p id="hero" className="hero-title">
           iPhone 15 Pro
         </p>
-        <div className="md:w-10/12 w-9/12">
+        <div className="w-9/12 md:w-10/12">
           <video autoPlay muted playsInline={true} key={videoSrc}>
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
       </div>
 
-      <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20">
+      <div id="cta" className="flex flex-col items-center translate-y-20 opacity-0">
         <a href="#highlights" className="btn">
           Buy
         </a>
-        <a className="font-normal text-xl">From $199/month or $999</a>
+        <a className="text-xl font-normal">From $199/month or $999</a>
       </div>
     </section>
   );
