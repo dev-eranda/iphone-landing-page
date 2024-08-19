@@ -11,12 +11,37 @@ const HowItWorks = () => {
     gsap.from("#chip", {
       scrollTrigger: {
         trigger: "#chip",
-        start: "20% bottom",
+        start: "-10% bottom",
       },
       opacity: 0,
       scale: 2,
       duration: 2,
       ease: "power2.inOut",
+    });
+
+    gsap.to("#frame-video", {
+      scrollTrigger: {
+        trigger: "#frame-video",
+        toggleActions: "restart nonde restart none",
+        start: "10% bottom",
+      },
+      onUpdate: () => {
+        const video = videoRef.current;
+        console.log(self);
+        // if (self.progress > 0 && self.progress < 1) {
+        //   if (video.paused) {
+        //     video.play();
+        //   }
+        // }
+        // else {
+        //   if (!video.paused) {
+        //     video.pause();
+        //   }
+        // }
+      },
+      onComplete: () => {
+        videoRef.current.play();
+      },
     });
 
     animateWithGsap(".g_fadeIn", {
@@ -56,9 +81,10 @@ const HowItWorks = () => {
             </div>
             <div className="hiw-video">
               <video
+                id="frame-video"
                 className="pointer-events-none"
-                playsInline
                 preload="none"
+                playsInline
                 muted
                 autoPlay
                 ref={videoRef}>

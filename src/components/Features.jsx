@@ -53,10 +53,10 @@ const Features = () => {
           <div className="flex-col flex-center sm:px-10">
             <div className="relative h-[50vh] w-full flex items-center">
               <video
-                playsInline
                 id="exploreVideo"
                 className="object-cover object-center w-full h-full"
                 preload="none"
+                playsInline
                 muted
                 autoPlay
                 ref={videoRef}>
