@@ -25,20 +25,6 @@ const HowItWorks = () => {
         toggleActions: "restart nonde restart none",
         start: "10% bottom",
       },
-      onUpdate: () => {
-        const video = videoRef.current;
-        console.log(self);
-        // if (self.progress > 0 && self.progress < 1) {
-        //   if (video.paused) {
-        //     video.play();
-        //   }
-        // }
-        // else {
-        //   if (!video.paused) {
-        //     video.pause();
-        //   }
-        // }
-      },
       onComplete: () => {
         videoRef.current.play();
       },
