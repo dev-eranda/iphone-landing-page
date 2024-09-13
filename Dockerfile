@@ -8,17 +8,20 @@ WORKDIR /app
 COPY package*.json ./
 
 # Copy local directories to the current local directory of our docker image (/app)
-COPY ./src ./src
-COPY ./public ./public
-# COPY ./index.html /app/
+# COPY ./src ./src
+# COPY ./public ./public
+
+RUN npm install 
+
+COPY . .
 
 # Install node packages, install serve, build the app, and remove dependencies at the end
-RUN npm install \
-    && npm install -g serve \
-    && npm run build \
-    && rm -fr node_modules
+# RUN npm install \
+#     && npm install -g serve \
+#     && npm run build \
+#     && rm -fr node_modules
 
-EXPOSE 3000
+EXPOSE 5173
 
 # Start the app using serve command
-CMD [ "serve", "-s", "build" ]
+CMD [ "npm", "start" ]
