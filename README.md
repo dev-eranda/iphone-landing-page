@@ -1,55 +1,41 @@
-## <a name="introduction">Introduction</a>
+# iPhone 15 Pro Landing Page
 
-This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.
+**Web Application:** [Click here to view the demonstration application](https://iphone-doc-xi.vercel.app/)
+<hr />
 
-## <a name="tech-stack">Tech Stack</a>
+## Project Backgroud and Overview
+This repository is a clone of Apple's iPhone 15 Pro website, built using React.js and TailwindCSS. It showcases effective use of GSAP for animations and Three.js for 3D rendering, allowing users to explore iPhone 15 Pro models in various colors and shapes. This project an excellent demonstration of modern web development practices.
+<hr />
 
-- React.js
-- Three.js
-- React Three Fiber
-- React Three Drei
-- GSAP (Greensock)
-- Vite
-- Tailwind CSS
+## Project Goals
+The main objectives of this application are to:
 
-## <a name="features">Features</a>
+1. Enhanced user experience with seamless and captivating animations powered by GSAP.
+2. Explore the iPhone 15 Pro from every angle with dynamic 3D rendering, offering various color and size options.
+3. Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
+4. Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
+<hr />
 
-- **Beautiful Subtle Smooth Animations using GSAP**: Enhanced user experience with seamless and captivating animations powered by GSAP.
+## Technical Details
+Core technologies used: 
 
-- **3D Model Rendering with Different Colors and Sizes**: Explore the iPhone 15 Pro from every angle with dynamic 3D rendering, offering various color and size options.
+- **React.js, Three.js, React Three Fiber, React Three Drei, GSAP (Greensock), Vite, Tailwind CSS** 
+<hr />
 
-- **Custom Video Carousel (made with GSAP)**: Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
+## Installation
+1. Clone repository:
+   ```sh
+   git clone https://github.com/dev-eranda/iphone-15-pro-landing-page
 
-- **Completely Responsive**: Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
-
-and many more, including code architecture and reusability 
-
-## <a name="quick-start">Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/ErandaMadusanka/iphone-doc.git
-cd iphone-doc
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+2. Install dependencies:
+   ```sh
+   npm install
+   
+3. Start development server:
+   ```sh
+   npm run dev
+   
+  - **Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.**
 
 ## <a name="snippets">Snippets</a>
 
