@@ -10,10 +10,10 @@ This repository is a clone of Apple's iPhone 15 Pro website, built using React.j
 ## Project Goals
 The main objectives of this application are to:
 
-1. Enhanced user experience with seamless and captivating animations powered by GSAP.
-2. Explore the iPhone 15 Pro from every angle with dynamic 3D rendering, offering various color and sizes.
-3. Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
-4. Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
+1. Create a better user experience with smooth and eye-catching animations using GSAP.
+2. Check out the iPhone 15 Pro in 3D, with different colors and sizes to explore.
+3. Enjoy a personalized browsing experience with an interactive video carousel built using GSAP.
+4. A fully responsive design ensures easy access and great viewing on any device.
 <hr />
 
 ## Technical Details
