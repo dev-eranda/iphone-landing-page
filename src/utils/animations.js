@@ -1,15 +1,15 @@
-import gsap from "gsap";
+import gsap from 'gsap';
 
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from 'gsap/all.js';
 gsap.registerPlugin(ScrollTrigger);
 
-export const animateWithGsap = (target, aniamtionProps, scrollProps) => {
+export const animateWithGsap = (target, animationProps, scrollProps) => {
   gsap.to(target, {
-    ...aniamtionProps,
+    ...animationProps,
     scrollTrigger: {
       trigger: target,
-      toggleActions: "restart reverse restart reverse",
-      start: "top 85%",
+      toggleActions: 'restart reverse restart reverse',
+      start: 'top 85%',
       ...scrollProps,
     },
   });
@@ -21,36 +21,29 @@ export const animateWithGsapTimeline = (
   rotationState,
   firstTarget,
   secondTarget,
-  aniamtionProps
+  animationProps
 ) => {
-  if (!timeline) {
-    console.error(
-      "Timeline is undefined. Make sure you are passing a valid GSAP timeline."
-    );
-    return;
-  }
-
   timeline.to(rotationRef.current.rotation, {
     y: rotationState,
     duration: 1,
-    ease: "power2.inOut",
+    ease: 'power2.inOut',
   });
 
   timeline.to(
     firstTarget,
     {
-      ...aniamtionProps,
-      ease: "power2.inOut",
+      ...animationProps,
+      ease: 'power2.inOut',
     },
-    "<"
+    '<'
   );
 
   timeline.to(
     secondTarget,
     {
-      ...aniamtionProps,
-      ease: "power2.inOut",
+      ...animationProps,
+      ease: 'power2.inOut',
     },
-    "<"
+    '<'
   );
 };

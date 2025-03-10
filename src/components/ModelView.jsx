@@ -1,30 +1,23 @@
-import * as THREE from "three";
-import Lights from "./lights";
-import IPhone from "./IPhone";
-import Loader from "./Loader";
-import { Suspense } from "react";
-import { OrbitControls, PerspectiveCamera, View } from "@react-three/drei";
+import { Html, OrbitControls, PerspectiveCamera, View } from '@react-three/drei';
 
-const ModelView = ({
-  index,
-  groupRef,
-  gsaptype,
-  controlRef,
-  setRotationState,
-  item,
-  size,
-}) => {
+import React, { Suspense } from 'react';
+import * as THREE from 'three';
+// import IPhone from './IPhone';
+import Lights from './Lights';
+import Loader from './Loader';
+
+const IPhone = React.lazy(() => import('./IPhone'));
+
+const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, size, item }) => {
   return (
-    <View
-      index={index}
-      id={gsaptype}
-      className={` w-full h-full absolute ${
-        index === 2 ? "right-[-100%]" : ""
-      }`}>
-      {/* Ambient light */}
+    <View index={index} id={gsapType} className={`w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''}`}>
+      {/* Ambient Light */}
       <ambientLight intensity={0.3} />
+
       <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+
       <Lights />
+
       <OrbitControls
         makeDefault
         ref={controlRef}
@@ -34,16 +27,10 @@ const ModelView = ({
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       />
-      <group
-        ref={groupRef}
-        name={`${index === 1} ? 'small' : 'large' `}
-        position={[0, 0, 0]}>
+
+      <group ref={groupRef} name={`${index === 1} ? 'small' : 'large`} position={[0, 0, 0]}>
         <Suspense fallback={<Loader />}>
-          <IPhone
-            scale={index === 1 ? [15, 15, 15] : [17, 17, 17]}
-            item={item}
-            size={size}
-          />
+          <IPhone scale={index === 1 ? [15, 15, 15] : [17, 17, 17]} item={item} size={size} />
         </Suspense>
       </group>
     </View>
