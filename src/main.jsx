@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
+import appleIcon from './assets/images/apple.svg';
 import './index.css';
 
 // import * as Sentry from '@sentry/react';
@@ -23,6 +24,17 @@ import './index.css';
 //   replaysSessionSampleRate: 0.1,
 //   replaysOnErrorSampleRate: 1.0,
 // });
+
+// Dynamically set the favicon
+const setFavicon = (iconPath) => {
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/svg+xml';
+  link.href = iconPath;
+  document.head.appendChild(link);
+};
+
+setFavicon(appleIcon);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
