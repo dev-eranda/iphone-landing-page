@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import appleIcon from './assets/images/apple.svg';
+import appleIcon from './assets/images/favicon.ico';
 import './index.css';
 
 // import * as Sentry from '@sentry/react';
@@ -29,7 +29,7 @@ import './index.css';
 const setFavicon = (iconPath) => {
   const link = document.createElement('link');
   link.rel = 'icon';
-  link.type = 'image/svg+xml';
+  link.type = 'image/x-icon';
   link.href = iconPath;
   document.head.appendChild(link);
 };

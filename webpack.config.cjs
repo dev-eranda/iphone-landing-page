@@ -72,7 +72,7 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.(png|jpe?g|gif|svg|webp)$/i, // Added webp support
+          test: /\.(png|jpe?g|gif|svg|webp|ico)$/i, // Added webp support
           type: 'asset/resource',
           generator: {
             filename: isProduction ? 'assets/images/[name].[contenthash:8][ext]' : 'assets/images/[name].[ext]', // Use contenthash for caching
