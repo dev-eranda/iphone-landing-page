@@ -1,4 +1,4 @@
-# iPhone Landing Page
+# iPhone landing page
 
 **Web Application:** [Click here to view the demonstration application](https://iphone-doc-xi.vercel.app/)
 <hr />
