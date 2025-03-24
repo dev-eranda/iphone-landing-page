@@ -4,16 +4,16 @@
 <hr />
 
 ## Project Backgroud and Overview
-This repository is a clone of Apple's iPhone 15 Pro website, built using ReactJS and TailwindCSS. It showcases effective use of GSAP for animations and Three.js for 3D rendering, allowing users to explore iPhone 15 Pro models in various colors and shapes. This project an excellent demonstration of modern web development practices.
+This repository is a clone of Apple's iPhone 15 Pro website, built using ReactJS and TailwindCSS. It showcases effective use of GSAP for animations and Three.js for 3D rendering, allowing users to explore iPhone 15 Pro models in various colors and shapes. This project an excellent demonstration of modern web development practices
 <hr />
 
 ## Project Goals
 The main objectives of this application are to:
 
-1. Create a better user experience with smooth and eye-catching animations using GSAP.
-2. Check out the iPhone 15 Pro in 3D, with different colors and sizes to explore.
-3. Enjoy a personalized browsing experience with an interactive video carousel built using GSAP.
-4. A fully responsive design ensures easy access and great viewing on any device.
+1. Create a better user experience with smooth and eye-catching animations using GSAP
+2. Check out the iPhone 15 Pro in 3D, with different colors and sizes to explore
+3. Enjoy a personalized browsing experience with an interactive video carousel built using GSAP
+4. A fully responsive design ensures easy access and great viewing on any device
 <hr />
 
 ## Technical Details
