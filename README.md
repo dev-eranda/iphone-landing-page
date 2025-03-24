@@ -1,10 +1,10 @@
-# iPhone 15 Pro Landing Page
+# iPhone Landing Page
 
 **Web Application:** [Click here to view the demonstration application](https://iphone-doc-xi.vercel.app/)
 <hr />
 
 ## Project Backgroud and Overview
-This repository is a clone of Apple's iPhone 15 Pro website, built using React.js and TailwindCSS. It showcases effective use of GSAP for animations and Three.js for 3D rendering, allowing users to explore iPhone 15 Pro models in various colors and shapes. This project an excellent demonstration of modern web development practices.
+This repository is a clone of Apple's iPhone 15 Pro website, built using ReactJS and TailwindCSS. It showcases effective use of GSAP for animations and Three.js for 3D rendering, allowing users to explore iPhone 15 Pro models in various colors and shapes. This project an excellent demonstration of modern web development practices.
 <hr />
 
 ## Project Goals
@@ -19,7 +19,7 @@ The main objectives of this application are to:
 ## Technical Details
 Core technologies used: 
 
-- **React.js, Three.js, React Three Fiber, React Three Drei, GSAP (Greensock), Vite, Tailwind CSS** 
+- **ReactJS, GSAP (GreenSock Animation Platform), Tailwind CSS** 
 <hr />
 
 ## Installation
