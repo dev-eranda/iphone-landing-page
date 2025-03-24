@@ -25,7 +25,7 @@ Core technologies used:
 ## Installation
 1. Clone repository:
    ```sh
-   git clone https://github.com/dev-eranda/iphone-15-pro-landing-page
+   git clone https://github.com/dev-eranda/iphone-15-pro-landing-page.git
 
 2. Install dependencies:
    ```sh
